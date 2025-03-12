@@ -1,0 +1,224 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+h1, h2, h3 {
+    color: #e91e63;
+}
+
+/* Remove underline from anchor tags */
+a {
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: none; /* No underline on hover */
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #ffebef;
+    position: fixed;
+    width: 95%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e91e63;
+    cursor: default;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+nav ul li a:hover{
+    color: #e91e63;
+}
+
+nav ul li a.active {
+    color: #e91e63; /* Highlight active link */
+}
+
+.download-btn {
+    background: #1e55dc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.4s
+}
+
+.download-btn:hover {
+    background: #2b34b5;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #ffebef, #fff);
+    padding: 50px;
+    opacity: 0; /* Hidden initially */
+    animation: fadeIn 1s forwards; /* Fade in animation */
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #666;
+}
+
+.cta-btn {
+    background: #e91e63;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: 0.4s
+}
+
+.cta-btn:hover {
+    background: #c2185b;
+}
+
+/* Features Section */
+#features {
+    padding: 100px 50px;
+    text-align: center;
+    background: #fff;
+    opacity: 0; /* Hidden initially */
+    animation: fadeIn 1s forwards 0.5s; /* Fade in with delay */
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.feature {
+    width: 30%;
+    padding: 20px;
+    background: #ffebef;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth zoom effect */
+}
+
+.feature:hover {
+    transform: scale(1.1); /* Scale up the feature on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.feature h3 {
+    font-size: 22px;
+}
+
+/* Steps Section */
+#how-it-works {
+    padding: 100px 50px;
+    background: linear-gradient(to right, #fff, #ffebef);
+    text-align: center;
+    opacity: 0; /* Hidden initially */
+    animation: fadeIn 1s forwards 1s; /* Fade in with delay */
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.step {
+    width: 30%;
+    padding: 20px;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 120px 50px;
+    background: #fff;
+    opacity: 0; /* Hidden initially */
+    animation: fadeIn 1s forwards 1.5s; /* Fade in with delay */
+}
+
+.contact-btn {
+    background: #e91e63;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 18px;
+    width: 200px;  /* Set a fixed width */
+    text-align: center;
+    display: inline-block;
+    transition: 0.4s
+}
+
+
+.contact-btn:hover {
+    background: #c2185b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffebef;
+    color: #333;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Scroll animation */
+section {
+    transition: opacity 1s ease;
+}
